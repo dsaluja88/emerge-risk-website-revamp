@@ -12,21 +12,21 @@ const leaders: LeaderItem[] = [
   {
     name: 'Ira Agarwal',
     role: 'Founder & Board Chair',
-    image: '/emergeai-risk-radar/images/team/ira-agarwal-profile.png',
+    image: '/images/team/ira-agarwal-profile.png',
     quote:
       'EmergeAI Risk Radar is an exceptional Agentic AI Platform with the potential to transform the software quality landscape. Its advanced capabilities empower businesses to innovate, streamline operations, and drive sustainable growth through cutting-edge automation and intelligent decision-making.',
   },
   {
     name: 'Hanish Suri',
     role: 'Senior Technical Advisor',
-    image: '/emergeai-risk-radar/images/team/hanish-suri-profile-v1.png',
+    image: '/images/team/hanish-suri-profile-v1.png',
     quote:
       'EmergeAI serves as a genuine partner—uplifting innovations, speeding meaningful outcomes, and guiding organizations toward lasting advancement. With its agentic approach, this platform is reshaping the way QA teams envision, create, and achieve future success.',
   },
   {
     name: 'Sunil Khokhar',
     role: 'Co-Founder & Board Chair',
-    image: '/emergeai-risk-radar/images/team/sunil-khokhar-profile.png',
+    image: '/images/team/sunil-khokhar-profile.png',
     quote:
       'EmergeAI Risk Radar is an advanced Agentic AI platform designed to transform the way organizations identify, assess, and manage risks. By combining intelligent automation with advanced AI capabilities, it empowers businesses to make informed decisions, streamline processes, and proactively address emerging challenges.',
   },

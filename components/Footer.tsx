@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="footer-brand">
             <Link href="/" className="site-logo">
               <Image
-                src="/emergeai-risk-radar/images/logo-light-v1.svg"
+                src="/images/logo-light-v1.svg"
                 alt="EmergeAI Risk Radar"
                 width={240}
                 height={42}

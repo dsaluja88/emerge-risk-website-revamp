@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   title: 'EmergeAI Risk Radar',
   description: 'AI-powered software risk assessment tool for release pipelines.',
   icons: {
-    icon: '/emergeai-risk-radar/images/favicon.png',
-    apple: '/emergeai-risk-radar/images/favicon.png',
+    icon: '/images/favicon.png',
+    apple: '/images/favicon.png',
   },
 };
 

@@ -20,10 +20,6 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  useEffect(() => {
-    setMobileMenuOpen(false);
-  }, [pathname]);
-
   return (
     <>
       <header
@@ -41,7 +37,7 @@ export default function Header() {
         <div className="site-header-inner">
           <Link href="/" className="site-logo" aria-label="EmergeAI Risk Radar">
             <Image
-              src="/emergeai-risk-radar/images/logo-light-v1.svg"
+              src="/images/logo-light-v1.svg"
               alt="EmergeAI Risk Radar"
               width={260}
               height={45}
@@ -143,7 +139,7 @@ export default function Header() {
         <div className="mobile-drawer-head">
           <Link href="/" onClick={() => setMobileMenuOpen(false)}>
             <Image
-              src="/emergeai-risk-radar/images/logo-light-v1.svg"
+              src="/images/logo-light-v1.svg"
               alt="EmergeAI Risk Radar"
               width={200}
               height={35}
