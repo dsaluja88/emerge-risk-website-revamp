@@ -10,13 +10,9 @@ export default function Hero() {
           muted
           loop
           playsInline
-          poster="/emergeai-risk-radar/images/screens/select-requirement-file-screen.png"
+          poster="/images/screens/select-requirement-file-screen.png"
         >
-          <source src="/emergeai-risk-radar/videos/home-risk-radar-updated.mp4" type="video/mp4" />
-          <source
-            src="https://demo.aiqariskradar.com/wp-content/uploads/2026/09/home-risk-radar-updated.mp4"
-            type="video/mp4"
-          />
+          <source src="/videos/home-risk-radar-updated.mp4" type="video/mp4" />
         </video>
         <div className="hero-overlay" />
       </div>

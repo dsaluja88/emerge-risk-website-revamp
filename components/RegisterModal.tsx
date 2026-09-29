@@ -1,9 +1,11 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { CloseIcon } from './Icons';
 
 export default function RegisterModal() {
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const previousFocusRef = useRef<HTMLElement | null>(null);
   const [isOpen, setIsOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [message, setMessage] = useState<{ text: string; isError: boolean } | null>(null);
@@ -19,6 +21,7 @@ export default function RegisterModal() {
 
   useEffect(() => {
     const handleOpen = () => {
+      previousFocusRef.current = document.activeElement as HTMLElement | null;
       setIsOpen(true);
       setMessage(null);
     };
@@ -31,14 +34,31 @@ export default function RegisterModal() {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
         setIsOpen(false);
+      } else if (e.key === 'Tab') {
+        const focusable = dialogRef.current?.querySelectorAll<HTMLElement>(
+          'button:not([disabled]), a[href], input:not([disabled])'
+        );
+        if (!focusable?.length) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
       }
     };
 
     if (isOpen) {
       document.body.style.overflow = 'hidden';
       window.addEventListener('keydown', handleKeyDown);
+      requestAnimationFrame(() => dialogRef.current?.querySelector<HTMLElement>('button')?.focus());
     } else {
       document.body.style.overflow = '';
+      previousFocusRef.current?.focus();
+      previousFocusRef.current = null;
     }
 
     return () => {
@@ -65,7 +85,7 @@ export default function RegisterModal() {
 
       if (!res.ok) {
         const errorData = await res.json().catch(() => ({}));
-        throw new Error(errorData.detail || 'Request received. You can sign in after administrator approval.');
+        throw new Error(errorData.detail || errorData.message || `Request failed (${res.status}). Please try again.`);
       }
 
       setMessage({
@@ -81,11 +101,10 @@ export default function RegisterModal() {
         password: '',
       });
     } catch (err: unknown) {
-      // In static or demo environment, provide the graceful message
       const error = err as Error;
       setMessage({
-        text: error.message || 'Request received. You can sign in after administrator approval.',
-        isError: false,
+        text: error.message || 'Your request could not be submitted. Please try again.',
+        isError: true,
       });
     } finally {
       setIsSubmitting(false);
@@ -100,8 +119,10 @@ export default function RegisterModal() {
       }}
       role="dialog"
       aria-modal="true"
+      aria-labelledby="register-modal-title"
+      aria-hidden={!isOpen}
     >
-      <div className="modal-container">
+      <div className="modal-container" ref={dialogRef}>
         <button
           type="button"
           className="modal-close-btn"
@@ -111,7 +132,7 @@ export default function RegisterModal() {
           <CloseIcon style={{ width: 18, height: 18 }} />
         </button>
 
-        <h2 className="modal-title">Request Access</h2>
+        <h2 className="modal-title" id="register-modal-title">Request Access</h2>
         <p className="modal-subtitle">
           Submit your details to request access to the EmergeAI Risk Radar platform.
         </p>

@@ -13,22 +13,22 @@ const team: MemberItem[] = [
   {
     name: 'Ira Agarwal',
     role: 'Founder & Board Chair',
-    image: '/emergeai-risk-radar/images/team/ira-agarwal-profile.png',
+    image: '/images/team/ira-agarwal-profile.png',
   },
   {
     name: 'Hanish Suri',
     role: 'Senior Technical Advisor',
-    image: '/emergeai-risk-radar/images/team/hanish-suri-profile-v1.png',
+    image: '/images/team/hanish-suri-profile-v1.png',
   },
   {
     name: 'Mohit Sharma',
     role: 'AI Developer',
-    image: '/emergeai-risk-radar/images/team/mohit-sharma-profile.png',
+    image: '/images/team/mohit-sharma-profile.png',
   },
   {
     name: 'Tushar Jangra',
     role: 'AI Developer',
-    image: '/emergeai-risk-radar/images/team/tushar-profile.png',
+    image: '/images/team/tushar-profile.png',
   },
 ];
 
