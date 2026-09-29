@@ -1,0 +1,96 @@
+{
+  "title": "Services",
+  "sections": [
+    {
+      "heading": null,
+      "paragraphs": [],
+      "images": [
+        {
+          "url": "/images/scraped/aapna-gptw-black.png",
+          "alt": "AAPNA Infotech"
+        },
+        {
+          "url": "/images/scraped/aapna-gptw-black.png",
+          "alt": "AAPNA Infotech"
+        }
+      ]
+    },
+    {
+      "heading": "AAPNA pride ourselves on delivering compelling, digital marketing solutions. Our winning solutions and experiences help many of our clients interact and engage with their customers in the best possible way.",
+      "paragraphs": [
+        "We develop solutions exclusively in Microsoft .NET and Opensource ptatforms, As a result of this exclusivity, we have been able to build a library of code components, which enable us to develop more reliable application in a shorter duration. We have worked in several different standard methodologies, such as agile, waterfall, iterative.",
+        "We design Smart, Simple, Effective & Professional Websites."
+      ],
+      "images": []
+    },
+    {
+      "heading": "With us, a WOW website design is just the beginning",
+      "paragraphs": [
+        "We creates pixel perfect, original and visually engaging designs. We make sure we understand the motivation behind every project, and develop designs that get the response you want from your users."
+      ],
+      "images": [
+        {
+          "url": "/images/scraped/We-make-it-work.png",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "heading": "How we make it work ?",
+      "paragraphs": [
+        "Every website we build is bespoke, we use our years of experience to create a website built using the latest technology such as HTML5, CSS3 and jQuery. Our websites can be optimized to allow them to be viewed on mobile devices such as Apple iOS and Android.",
+        "Whether you need to blow away competition, launch an eCommerce store, WordPress CMS website, bespoke custom application in ASP.NET/PHP or require a stunning brochure website to inform people about what you do, we offer as standard:"
+      ],
+      "images": []
+    },
+    {
+      "heading": "Recent Projects",
+      "paragraphs": [
+        "Below is a collection of latest work and sites we are particularly proud of"
+      ],
+      "images": []
+    },
+    {
+      "heading": "It’s a journey",
+      "paragraphs": [
+        "Website development is a journey. Most website development companies handle the task of developing a website in a factory like mode, just churning out website after website. At AAPNA, we treat the website development process like a journey – preferably a never ending one, like your business.",
+        "Building a website is like building the front display of your shop, so it needs to evolve, get a fresh look every year, and be inviting to new customers as well as existing ones. It also needs a regular maintenance, including regular cleaning, and minor touch ups from time to time. At AAPNA we understand this, and therefore, our journey starts with us understanding your business, and your need for a website. We work with you to define the purpose of the website, its target audience, the message you want to convey to your clients. We capture all of this information through a well defined set of processes, and involve our business experts, who have years and years of experience in understanding people’s businesses and giving a face to a business – aka a great website.",
+        "Backed with the deep understanding of your business, our business analyst proposes a layout (not design) for the new website. The layout typically depicts the various elements to be displayed in your website, and their locations. At this point we may or may not involve a designer, but depending on the complexity of the business, multiple analysts may get involved. This of course is done via a series of brain storming sessions with you – the business owner.",
+        "Armed with a great layout, the analysts get together with our design team, which comprises of some highly creative people to create a WOW design for your website. The design is then presented to you from our demo website, and through an iterative process, the design is refined to finalization.",
+        "Well, from here on the process is mostly behind the scene, as the production teams (read highly technical folks) take over, and cut and slash the design, and produce all kinds of technical files such as HTML, DHTML, PHP, MySQL, Javascript, JQuery and convert the design into a living breathing functioning website – voila and then we go live.",
+        "In parallel to our production process, as and when required, our content team works with you, and our analysts, to define, refine and finalize the content for the website, both text and visual.",
+        "At this point, our online marketing team gets together with you and starts planning out ways to generate more sales using your brand new website.",
+        "/**/jQuery.fn.stars=function(a){return jQuery(this).each(function(){var e=jQuery(this).data(\"rating\");var d=jQuery(this).data(\"numStars\");var c=new Array(Math.floor(e+1)).join('<i class=\"fa fa-star\" style=\"color:#F0B952; font-size:20px\"></i>');var f=((e%1)!==0)?'<i class=\"fa fa-star-half-empty\" style=\"color:#F0B952; font-size:20px\"></i>':\"\";var b=new Array(Math.floor(d+1-e)).join('<i class=\"fa fa-star-o\"></i>');jQuery(this).html(c+f+b)})};jQuery(\".stars\").stars();/**/",
+        "Subscribe Our Newsletter",
+        "(function() {\n\twindow.mc4wp = window.mc4wp || {\n\t\tlisteners: [],\n\t\tforms: {\n\t\t\ton: function(evt, cb) {\n\t\t\t\twindow.mc4wp.listeners.push(\n\t\t\t\t\t{\n\t\t\t\t\t\tevent   : evt,\n\t\t\t\t\t\tcallback: cb\n\t\t\t\t\t}\n\t\t\t\t);\n\t\t\t}\n\t\t}\n\t}\n})();",
+        "Attachment (Max 5MB): Acceptable files: pdf | txt | doc | jpg"
+      ],
+      "images": [
+        {
+          "url": "/images/scraped/facebook-footer.jpg",
+          "alt": "Facebbok"
+        },
+        {
+          "url": "/images/scraped/google-rating-4.3.png",
+          "alt": "Google Rating"
+        },
+        {
+          "url": "/images/scraped/call.png",
+          "alt": "call"
+        },
+        {
+          "url": "/images/scraped/mail.png",
+          "alt": "mail"
+        },
+        {
+          "url": "/images/scraped/esc-member-aapna-infotheek-pvt-ltd.webp",
+          "alt": "ESC Member"
+        },
+        {
+          "url": "/images/scraped/iso-certificate.jpg",
+          "alt": ""
+        }
+      ]
+    }
+  ]
+}
