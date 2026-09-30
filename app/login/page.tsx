@@ -1,5 +1,6 @@
 import React from 'react';
 import PageHero from '@/components/PageHero';
+import { APP_URL } from '@/lib/site';
 
 export default function LoginPage() {
   return (
@@ -20,11 +21,11 @@ export default function LoginPage() {
             Sign in to Risk Radar
           </h2>
           <p className="section-lead" style={{ margin: '0 auto 30px auto' }}>
-            The production application is hosted at aiqariskradar.com. Continue below to the secure live authentication portal.
+            Continue below to the secure EmergeAI Risk Radar application.
           </p>
           <a
             className="btn hover-gradient"
-            href="https://www.aiqariskradar.com/login"
+            href={`${APP_URL}/login`}
             target="_blank"
             rel="noopener noreferrer"
           >

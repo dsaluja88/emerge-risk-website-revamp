@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { ChevronDownIcon, MenuIcon, CloseIcon } from './Icons';
+import { APP_URL } from '@/lib/site';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -111,7 +112,7 @@ export default function Header() {
 
               <li className="nav-item" style={{ marginLeft: '12px' }}>
                 <a
-                  href="https://www.aiqariskradar.com/login"
+                  href={`${APP_URL}/login`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn hover-gradient"
@@ -200,7 +201,7 @@ export default function Header() {
 
           <div style={{ marginTop: '20px' }}>
             <a
-              href="https://www.aiqariskradar.com/login"
+              href={`${APP_URL}/login`}
               target="_blank"
               rel="noopener noreferrer"
               className="btn hover-gradient"

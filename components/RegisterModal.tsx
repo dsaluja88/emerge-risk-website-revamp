@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { CloseIcon } from './Icons';
+import { API_URL, APP_URL } from '@/lib/site';
 
 export default function RegisterModal() {
   const dialogRef = useRef<HTMLDivElement>(null);
@@ -77,7 +78,7 @@ export default function RegisterModal() {
     setMessage(null);
 
     try {
-      const res = await fetch('/api/auth/signup', {
+      const res = await fetch(`${API_URL}/api/auth/signup`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
@@ -248,7 +249,7 @@ export default function RegisterModal() {
           <div className="modal-footer-link">
             Already registered?{' '}
             <a
-              href="https://www.aiqariskradar.com/login"
+              href={`${APP_URL}/login`}
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -1,6 +1,6 @@
 # EmergeAI Risk Radar - Next.js recreation
 
-This package recreates the public pages currently exposed by https://demo.aiqariskradar.com/ using Next.js App Router and responsive CSS.
+This package contains the public EmergeAI Risk Radar pages using Next.js App Router and responsive CSS.
 
 Included routes:
 - /
@@ -11,9 +11,15 @@ Included routes:
 - /term-conditions/
 - /login/
 
-The Login button intentionally links to the live authentication application at https://www.aiqariskradar.com/login, matching the current site's architecture.
+All site images and video are served from `public/`; the production site has no WordPress runtime or media dependency.
 
-The innovation page uses the live site's infographic/screenshot assets by URL so the design can be viewed immediately. Use download-assets.ps1 to save the assets locally before production if you want the project to be independent of the WordPress media server.
+Production routing is intentionally direct, without Azure Front Door:
+
+- `www.aiqariskradar.com` hosts this marketing site.
+- `app.aiqariskradar.com` hosts the authenticated application.
+- Browser API requests go directly to `https://riskradar-api.azurewebsites.net`.
+
+Override the latter two URLs at build time with `NEXT_PUBLIC_APP_URL` and `NEXT_PUBLIC_API_URL` if needed.
 
 Run:
 1. npm install

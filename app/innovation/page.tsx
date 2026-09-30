@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import PageHero from '@/components/PageHero';
+import { APP_URL } from '@/lib/site';
 
 const steps = [
   {
@@ -111,7 +112,7 @@ export default function InnovationPage() {
             </p>
             <div style={{ marginTop: '8px' }}>
               <a
-                href="https://www.aiqariskradar.com/login"
+                href={`${APP_URL}/login`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn hover-gradient"
