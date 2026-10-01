@@ -10,7 +10,6 @@ export default function Hero() {
           muted
           loop
           playsInline
-          poster="/images/screens/select-requirement-file-screen.png"
         >
           <source src="/videos/home-risk-radar-updated.mp4" type="video/mp4" />
         </video>
